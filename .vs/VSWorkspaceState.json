@@ -1,0 +1,14 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\cypress",
+    "\\cypress\\e2e",
+    "\\cypress\\e2e\\cypress",
+    "\\cypress\\e2e\\cypress\\e2e",
+    "\\cypress\\e2e\\cypress\\e2e\\cypress",
+    "\\cypress\\e2e\\cypress\\e2e\\cypress\\support",
+    "\\cypress\\e2e\\cypress\\support"
+  ],
+  "SelectedNode": "\\cypress\\e2e",
+  "PreviewInSolutionExplorer": false
+}

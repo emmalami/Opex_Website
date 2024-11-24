@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-11-19T14:27:52.281Z",
+    "end": "2024-11-19T14:28:05.465Z",
+    "duration": 13184,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "ca435d02-9e87-41ff-b36e-cd71f2019dff",
+      "title": "",
+      "fullFile": "cypress\\e2e\\cypress\\e2e\\Website.cy.js",
+      "file": "cypress\\e2e\\cypress\\e2e\\Website.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "30df0e93-3494-4b0d-a140-635966ce9fcc",
+          "title": "Open Opex Website",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "landing page",
+              "fullTitle": "Open Opex Website landing page",
+              "timedOut": null,
+              "duration": 11833,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.opexconsult.com/');\ncy.title().then(title => {\n  let Pagetitle = cy.log(`Page title is: ${title}`);\n  cy.wrap(title).should('eq', 'Opex Consult');\n  cy.contains('Get in touch').click();\n  cy.get('.mb-12').should('have.text', \"Let's level up your brand, together\");\n  cy.get('.flex-shrink-0 > img').should('be.visible');\n  cy.get('.gap-y-5 > .text-4xl').should('be.visible');\n});",
+              "err": {},
+              "uuid": "71d74352-2f1b-4689-bd74-bab1a14e6a30",
+              "parentUUID": "30df0e93-3494-4b0d-a140-635966ce9fcc",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "71d74352-2f1b-4689-bd74-bab1a14e6a30"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 11833,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/report/mochawesome-report"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
